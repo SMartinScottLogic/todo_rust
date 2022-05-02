@@ -34,3 +34,6 @@ serde_json = "1.0"
 log = "0.4.14"
 # A logger that sends a message with its Rust source's line and filename to the brow…
 wasm-logger = "0.2.0"
+
+# The uncomplicated state management library for Yew.
+bounce = "0.2.0"

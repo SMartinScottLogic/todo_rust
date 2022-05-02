@@ -1,4 +1,9 @@
 # todo_rust
+## Install Trunk
+* cargo install --locked trunk
+* cargo install wasm-bindgen-cli
+
+## Start trunk watching
 ```bash
 $ trunk serve
 May 02 14:26:38.683  INFO 📦 starting build
