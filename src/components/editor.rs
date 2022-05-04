@@ -1,5 +1,4 @@
 use web_sys::{HtmlInputElement, KeyboardEvent};
-use yew::use_effect_with_deps;
 use yew::{function_component, html, use_node_ref, Callback, Properties};
 
 #[derive(Properties, PartialEq)]
@@ -10,20 +9,7 @@ pub struct EditorProps {
 #[function_component(Editor)]
 pub fn editor(EditorProps { update }: &EditorProps) -> Html {
     let name_ref = use_node_ref();
-    /*
-    {
-        let name_ref = name_ref.clone();
-        use_effect_with_deps(
-            move |a| {
-                if let Some(input) = a.cast::<HtmlInputElement>() {
-                    input.focus();
-                };
-                || ()
-            },
-            name_ref,
-        );
-    }
-    */
+
     let onclick = {
         let name_ref = name_ref.clone();
         let update = update.clone();
@@ -50,7 +36,7 @@ pub fn editor(EditorProps { update }: &EditorProps) -> Html {
     html! {
         <div style="display: flex; flex-flow: row nowrap;">
             <input type="text" ref={name_ref} onkeyup={onkeyup}
-                name="course_name_editor" data-test-selector="nav-search-input"
+                name="editor" data-test-selector="nav-search-input"
                 autocapitalize="none" spellcheck="false" autocomplete="off" class={"editor"} />
             <button onclick={onclick} style="flex: 0; font-size: 1.2em; ">{ "Ok" }</button>
         </div>
