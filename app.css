@@ -1,0 +1,26 @@
+body {
+    width: 60%;
+    left: 20%;
+    position: absolute;
+}
+
+div.todo.container {
+    border: solid black 1px;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.bi-cross {
+    position: relative;
+    top: -8px;
+}
+
+.editor {
+    flex: 4 0px;
+    padding-right: 1em;
+    height: 3rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1.4em;
+}

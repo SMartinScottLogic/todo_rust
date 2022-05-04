@@ -24,6 +24,8 @@ wee_alloc = "0.4"
 yew = "0.19.3"
 # Convenience crate for working with local and session storage in browser
 gloo-storage = "0.2.1"
+# Bindings for all Web APIs, a procedurally generated crate from WebIDL 
+web-sys = "0.3"
 
 # A generic serialization/deserialization framework
 serde = { version = "1.0", features = ["derive"] }

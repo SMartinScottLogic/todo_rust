@@ -9,7 +9,7 @@ pub struct TodoItemProps {
 pub fn todoitem(TodoItemProps { message }: &TodoItemProps) -> Html {
     html! {
         <>
-            <p class={"name"} style={"padding-left: 2.5rem;"}>{ message }</p>
+            <span class={"name"} style={"padding-left: 2.5rem;"}>{ message }</span>
         </>
     }
 }
